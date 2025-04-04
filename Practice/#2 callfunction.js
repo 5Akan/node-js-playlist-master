@@ -1,9 +1,10 @@
-function callFunction(fun){
- fun();
+function callBack(fun){
+    fun();
 }
 
-var tata = function(){
-    console.log('bye');
+var sayBye = function() {
+    console.log("Bye")
 }
 
-callFunction(tata);
+callBack(sayBye);
+
