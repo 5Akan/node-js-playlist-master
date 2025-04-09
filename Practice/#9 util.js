@@ -18,9 +18,9 @@ var sampath = new Person('sampath');
 var Akanimoh = new Person('Akanimoh');
 
 var People = [james,saif,sampath];
-
+console.log(james)
 Akanimoh.on('talk', (mssg)=>{
-    console.log("Akanimoh said " + mssg);
+    console.log(Akanimoh.name+" said" + mssg);
 })
 People.forEach(function(Person){
     Person.on('speak',function(msg){
@@ -31,4 +31,4 @@ People.forEach(function(Person){
 james.emit('speak','This is james');
 saif.emit('speak','OH great nice to meet you Mer. ');
 sampath.emit('speak','Thats cool');
-Akanimoh.emit('talk', 'I did this')
+Akanimoh.emit('talk', ' I did this');

@@ -58,24 +58,26 @@
 
 
 //Creating and Removing Directories
-// var fs = require('fs');
+var fs = require('fs');
 
-//For removing or deleting a file
+// //For removing or deleting a file
 // fs.unlink('writeMe.txt',function(err,data){
 //     })
 
-//Synchronous method
-//For making or creating directory or new folder
+// Synchronous method
+// For making or creating directory or new folder
 // fs.mkdirSync('newStuff');
-//For removing or deleting a Directory
+// For removing or deleting a Directory
 // fs.rmdirSync('newStuff');
 
 //Asynchronous method
-// fs.mkdir('newStuff',function(){
-//     fs.readFile('readMe.txt','utf8',function(err,data){
-//        fs.writeFile('./newStuff/writeMe.txt',data,function(err,data){})
+// fs.mkdir('myDir', function () {
+//     fs.readFile('writeMe.txt', 'utf-8', function (err, data) {
+//         fs.writeFile('./myDir/newFile.txt', data, function () {
+            
+//         })
 //     })
-//       });
+// })
 
 //Removes file first then the folder that housed it
 // fs.unlink('./newStuff/writeMe.txt',function(){

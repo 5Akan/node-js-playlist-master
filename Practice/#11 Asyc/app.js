@@ -1,8 +1,10 @@
 var fs = require('fs');
 
-var file = fs.readFile('input.txt','utf8',function(err,data){
-    fs.writeFile('writeme.txt',data);
-    console.log(data);
-});
+fs.readFile('input.txt', 'utf-8', function(err, data) {
+   
+    fs.writeFile('output.txt',data, function (err,data) {
+        
+    })
+})
 
-console.log('This is an instruction outside the sync file system.');
+console.log("Run at the same time");
