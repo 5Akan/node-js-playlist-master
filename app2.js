@@ -13,21 +13,21 @@
 // })
 // //We need to specify a port to listen to for request
 // server.listen(3000,'127.0.0.1')
-// console.log('Now listening to port 3000')
+// console.log('Now listening to port 3000');
 
-//Video 14
-// var http = require('http');
-// var fs = require('fs');
+// Video 14
+var http = require('http');
+var fs = require('fs');
 
-// var myReadStream = fs.createReadStream(__dirname + '/readMe.txt','utf8');
+var myReadStream = fs.createReadStream(__dirname + '/readMe.txt', 'utf-8');
 
-// //createReadStream has an eventlistener to listen to when the buffer sends a chunk of data
-// //Below it listens and fires the function when it receives a chunk of data
-// myReadStream.on('data',function (chunk) {
-//     console.log('New Chunk received')
-//     console.log(chunk) 
+//createReadStream inherits from eventEmitter to listen to when the buffer sends a chunk of data
+//Below it listens and fires the function when it receives a chunk of data
+myReadStream.on('data',function (chunk) {
+    console.log('\n New Chunk received')
+    console.log(chunk) 
 
-// })
+})
 
 //Video 15
 // var http = require('http');
