@@ -16,21 +16,20 @@
 // console.log('Now listening to port 3000');
 
 // Video 14
-var http = require('http');
-var fs = require('fs');
-
-var myReadStream = fs.createReadStream(__dirname + '/readMe.txt', 'utf-8');
-
-//createReadStream inherits from eventEmitter to listen to when the buffer sends a chunk of data
-//Below it listens and fires the function when it receives a chunk of data
-myReadStream.on('data',function (chunk) {
-    console.log('\n New Chunk received')
-    console.log(chunk) 
-
-})
-
-//Video 15
 // var http = require('http');
+// var fs = require('fs');
+
+// var myReadStream = fs.createReadStream(__dirname + '/readMe.txt', 'utf-8');
+
+// //createReadStream inherits from eventEmitter to listen to when the buffer sends a chunk of data
+// //Below it listens and fires the function when it receives a chunk of data
+// myReadStream.on('data',function (chunk) {
+//     console.log('\n New Chunk received')
+//     console.log(chunk) 
+
+// })
+//Video 15
+
 // var fs = require('fs');
 
 // var myReadStream = fs.createReadStream(__dirname + '/readMe.txt','utf8');
@@ -39,13 +38,12 @@ myReadStream.on('data',function (chunk) {
 // //createReadStream has an eventlistener to listen to when the buffer sends a chunk of data
 // //Below it listens and fires the function when it receives a chunk of data
 // myReadStream.on('data',function (chunk) {
-//     console.log('New Chunk received')
+//     console.log('New Chunk received');
 //     myWriteStream.write(chunk);
+// })
 
-// }
-
-//Video 16 and 17
-//Pipe..short of what is up
+// Video 16 and 17
+// Pipe..short of what is up
 // var http = require('http');
 // var fs = require('fs');
 
@@ -53,7 +51,7 @@ myReadStream.on('data',function (chunk) {
 //     console.log('Request was made: ' + req.url);
 //     //Response Headers syntax
 //     // res.writeHead(status,content-type)
-//     res.writeHead(200,{'Content-Type':'text/html'})
+//     res.writeHead(200,{'Content-Type':'text/html'});
 //     var myReadStream = fs.createReadStream(__dirname + '/use.html','utf8');
 
 //     myReadStream.pipe(res);
@@ -65,7 +63,7 @@ myReadStream.on('data',function (chunk) {
 
 //Video 18
 // var http = require('http');
-// var fs = require('fs');
+
 
 // var server = http.createServer(function (req,res) {//A way to deal with request is using a function
 //     console.log('Request was made: ' + req.url);
@@ -80,7 +78,6 @@ myReadStream.on('data',function (chunk) {
 //     //res.end(string or a buffer)
 //     res.end(JSON.stringify(myObj));
    
-    
 // })
 
 // //We need to specify a port to listen to for request
@@ -119,4 +116,4 @@ myReadStream.on('data',function (chunk) {
 // server.listen(3000,'127.0.0.1');
 // console.log('Now listening to port 3000')
 
-//Express JS
+    // Express JS
