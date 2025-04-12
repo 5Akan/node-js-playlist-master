@@ -84,8 +84,8 @@
 // server.listen(3000,'127.0.0.1')
 // console.log('Now listening to port 3000')
 
-//Video 19
-//Basic Routing
+// // Video 19
+// // Basic Routing
 // var http =require('http');
 // var fs =require('fs');
 
@@ -97,7 +97,8 @@
 //         fs.createReadStream(__dirname + '/use.html','utf8').pipe(res);
 
 //     }else if(req.url === '/contact'){
-//         fs.createReadStream(__dirname +'/contact.html','utf8').pipe(res);
+//         res.writeHead(200,{'Content-type':'text/html'});
+//         fs.createReadStream(__dirname +'/contact.html').pipe(res);
 //     }else if(req.url === '/api/ninjas'){
 //         var ninjas = [
 //             {name:'Akanimoh', Age:23},
@@ -116,4 +117,4 @@
 // server.listen(3000,'127.0.0.1');
 // console.log('Now listening to port 3000')
 
-    // Express JS
+
