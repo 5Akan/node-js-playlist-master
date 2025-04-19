@@ -50,5 +50,5 @@ app.get('/profile/:id', function (req, res) {
     res.render('profile', {person:req.params.id});
 })
 
-//just commit something
+//too much procastination
 app.listen(3000);
