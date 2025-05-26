@@ -46,6 +46,7 @@ app.set('view engine', 'ejs');
 app.get('/', function (req, res) {
     res.sendFile(__dirname + '/use.html');
 })
+
 app.get('/profile/:id', function (req, res) {
     res.render('profile', {person:req.params.id});
 })
